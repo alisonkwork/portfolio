@@ -197,6 +197,12 @@ h1 {
     padding: 30px;
 }
 
+
+.portfolio:hover img {
+    transform: scale(1.1); 
+    transition: 400ms; 
+}
+
 .portfolio h2 {
     font-family: var(--header-text);
     color: #3E3E3E;
@@ -233,6 +239,11 @@ h1 {
     margin: 0px 10px 10px 0px;
 }
 
+.portfolioMBN:hover h3 {
+    color: var(--accent-purple); 
+    transition: 400ms; 
+}
+
 .portfolio h4 {
     font-family: var(--secondary-text);
     color: #585858;
@@ -241,6 +252,21 @@ h1 {
     text-align: left;
     margin-bottom: 2px;
     margin-top: 14px;
+}
+
+.portfolio h5 {
+    font-family: var(--secondary-text);
+    color: #585858;
+    font-size: 11pt;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 2px;
+    margin-top: 14px;
+}
+
+.portfolioMBN:hover h5 {
+    color: var(--accent-purple); 
+    transition: 400ms; 
 }
 
 .circle-container {
@@ -262,7 +288,8 @@ h1 {
 hr.purpleLine {
     border: 2.5px solid var(--accent-purple);
     width: 60px;
-    align: left;
+    margin: 0px;
+    padding: 0px;
 }
 
 
