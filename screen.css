@@ -266,10 +266,14 @@ nav {
     letter-spacing: -1px;
 }
 
-.portfolioText {
+.portfolioColumnRight {
     padding: 20px;
     margin-top: 40px;
     justify-content: left;
+}
+
+.portfolioColumnLeft {
+    margin-top: 5px;
 }
 
 .portfolio h3 {
@@ -324,110 +328,30 @@ hr.purpleLine {
     padding: 0px;
 }
 
-.portfolioMBN {
-    background-color: var(--accent-yellow);
+.portfolioCard {
     border-radius: 14px;
     width: 100%;
-    height: 300px;
+    height: auto;
     padding: 20px 20px 20px 60px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px; 
     justify-content: left;
-    gap: 20px;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
-.portfolioMBN:hover img {
+.portfolioCard:hover img {
     transform: scale(1.05); 
     transition: 400ms; 
 }
 
-.portfolioMBN:hover h3 {
+.portfolioCard:hover h3 {
     color: var(--accent-purple); 
     transition: 400ms; 
 }
 
-.portfolioMBN:hover h5 {
-    color: var(--accent-purple); 
-    transition: 400ms; 
-}
-
-.portfolioTHERAPY {
-    background-color: var(--accent-gray);
-    border-radius: 14px;
-    width: 100%;
-    height: 300px;
-    padding: 20px 20px 20px 60px;
-    display: flex;
-    justify-content: left;
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.portfolioTHERAPY:hover img {
-    transform: scale(1.05); 
-    transition: 400ms; 
-}
-
-.portfolioTHERAPY:hover h3 {
-    color: var(--accent-purple); 
-    transition: 400ms; 
-}
-
-.portfolioTHERAPY:hover h5 {
-    color: var(--accent-purple); 
-    transition: 400ms; 
-}
-
-.portfolioHARVEST {
-    background-color: var(--accent-pink);
-    border-radius: 14px;
-    width: 100%;
-    height: 300px;
-    padding: 20px 20px 20px 60px;
-    display: flex;
-    justify-content: left;
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.portfolioHARVEST:hover img {
-    transform: scale(1.05); 
-    transition: 400ms; 
-}
-
-.portfolioHARVEST:hover h3 {
-    color: var(--accent-purple); 
-    transition: 400ms; 
-}
-
-.portfolioHARVEST:hover h5 {
-    color: var(--accent-purple); 
-    transition: 400ms; 
-}
-
-.portfolioSEE {
-    background-color: var(--accent-yellow);
-    border-radius: 14px;
-    width: 100%;
-    height: 300px;
-    padding: 20px 20px 20px 60px;
-    display: flex;
-    justify-content: left;
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.portfolioSEE:hover img {
-    transform: scale(1.05); 
-    transition: 400ms; 
-}
-
-.portfolioSEE:hover h3 {
-    color: var(--accent-purple); 
-    transition: 400ms; 
-}
-
-.portfolioSEE:hover h5 {
+.portfolioCard:hover h5 {
     color: var(--accent-purple); 
     transition: 400ms; 
 }
@@ -677,7 +601,42 @@ ul {
     text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+    .portfolioCard {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .portfolioColumnRight {
+        margin-top: 0px;
+        justify-content: center;
+    }
+
+    .portfolioColumnLeft {
+        margin: 0 auto;
+        padding-bottom: 0px;
+    }
+
+    .portfolioCard h3 {
+        text-align: center;
+    }
+
+    .portfolioCard h4 {
+        text-align: center;
+    }
+
+    .portfolioCard h5 {
+        text-align: center;
+    }
+
+    .circle-container {
+        margin: 0 auto;
+    }
+
+    hr.purpleLine {
+        margin: 0 auto;
+    }
+
     .portfolioSubSection {
         grid-template-columns: 1fr;
         padding: 20px;
