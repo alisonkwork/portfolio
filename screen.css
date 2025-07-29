@@ -7,6 +7,7 @@
     --accent-purple: #B6187A;
     --accent-yellow: #F8EECF;
     --accent-pink: #F3DBD2;
+    --accent-pink-light: #F8E9E4;
     --accent-gray: #FAF9F7;
 }
 
@@ -25,6 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 footer {
@@ -70,7 +72,7 @@ h1 {
 h2 {
     font-family: var(--header-text);
     color: #3E3E3E;
-    font-size: 24pt;
+    font-size: 22pt;
     font-weight: 600;
     text-align: left;
     margin-bottom: 0px;
@@ -505,10 +507,11 @@ hr.purpleLine {
 }
 
 .portfolioHeader {
-    padding: 30px 60px 30px 60px;
-    display: flex;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px; 
     justify-content: left;
-    gap: 50px;
     margin: 0px;
 }
 
@@ -518,16 +521,15 @@ hr.purpleLine {
     padding: 30px 30px 0px 30px;
 }
 
-.portfolioHeaderText {
+.portfolioHeaderColumn {
     padding: 30px;
-    width: 40%;
-    margin-left: 40px;
-    margin-top: 35px;
-    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 40px;
+    margin-right: 40px;
     justify-content: left;
 }
 
-.portfolioHeaderText h1 {
+.portfolioHeaderColumn h1 {
     font-family: var(--header-text);
     letter-spacing: .2px;
     line-height: 34pt;
@@ -539,7 +541,7 @@ hr.purpleLine {
     margin-top: 0px;
 }
 
-.portfolioHeaderText p {
+.portfolioHeaderColumn p {
     font-family: var(--secondary-text);
     color: #585858;
     font-size: 14pt;
@@ -561,24 +563,10 @@ hr.purpleLine {
     height: 26px;
 }
 
-.portfolioSection {
-    padding: 100px 200px 100px 200px;
-    display: flex;
-    align-items: center;
-}
-
-.portfolioSection h2 {
-    font-family: var(--header-text);
-    color: #585858;
-    font-size: 24pt;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 0px;
-}
-
-.portfolioColumn {
-    margin: 0px 20px 0px 20px;
-    width: 100%;
+.shape {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
 }
 
 ul {
@@ -589,6 +577,133 @@ ul {
     text-align: left;
     margin-bottom: 0px;
 }
+
+.cropped-image {
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+  object-fit: cover; 
+  object-position: 50% 50%;
+}
+
+
+.sectionHeader {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+    padding: 50px 200px 30px 200px;
+    margin: 0px;
+}
+
+.sectionHeader h2 {
+    font-family: var(--header-text);
+    color: #585858;
+    font-size: 22pt;
+    font-weight: 700;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sectionHeader h3 {
+    font-family: var(--secondary-text);
+    color: #585858;
+    font-size: 14pt;
+    font-weight: 300;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+.portfolioSection {
+    padding: 80px 200px 80px 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+    align-items: flex-start;
+}
+
+.portfolioSubSection {
+    padding: 20px 200px 20px 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+    align-items: flex-start;
+}
+
+.portfolioSubSectionFull {
+    padding: 20px 200px 20px 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+    align-items: flex-start;
+}
+
+.portfolioColumn {
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolioColumn h2 {
+    font-family: var(--header-text);
+    color: #585858;
+    font-size: 22pt;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.portfolioColumn h3 {
+    font-family: var(--secondary-text);
+    color: #585858;
+    font-size: 14pt;
+    font-weight: 600;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.portfolioColumn h4 {
+    font-family: var(--secondary-text);
+    color: #585858;
+    font-size: 12pt;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .portfolioSubSection {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .portfolioHeader {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .portfolioSection {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .sectionHeader {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .portfolioSubSectionFull {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
 
 
 
