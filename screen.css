@@ -714,6 +714,12 @@ ul {
 }
 
 @media (max-width: 768px) {
+
+    .subNav {
+        display: none;
+    }
+
+
     .portfolioSubSection {
         grid-template-columns: 1fr;
         padding: 20px;
@@ -724,7 +730,7 @@ ul {
 
     .portfolioHeader {
         grid-template-columns: 1fr;
-        padding: 20px;
+        padding: 30px 20px 30px 20px;
         gap: 0px;
         width: auto;
         height: auto;
@@ -743,6 +749,7 @@ ul {
 
     .portfolioHeaderColumn {
         margin-top: 0px;
+        padding: 20px 0px 20px 0px;
     }
 
     .portfolioHeaderColumn h1 {
@@ -829,6 +836,10 @@ ul {
     .cropped-image {
         width: 100%;
         height: auto;
+    }
+
+    .previousNext {
+        padding: 30px 10px 0px 10px;
     }
 }
 
