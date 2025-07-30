@@ -663,6 +663,15 @@ ul {
         height: auto;
     }
 
+    footer {
+        height: auto;
+        font-size: 10pt;
+    }
+
+    .footer img {
+        display: none;
+    }
+
     nav {
         padding: 0px 20px 0px 0px;
         margin: 0px;
