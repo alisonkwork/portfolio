@@ -26,6 +26,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     overflow: hidden;
 }
 
@@ -268,7 +271,7 @@ nav {
 
 .portfolioColumnRight {
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
     justify-content: left;
 }
 
@@ -330,7 +333,7 @@ hr.purpleLine {
 
 .portfolioCard {
     border-radius: 14px;
-    width: 100%;
+    width: auto;
     height: auto;
     padding: 20px 20px 20px 60px;
     display: grid;
@@ -338,7 +341,11 @@ hr.purpleLine {
     gap: 20px; 
     justify-content: left;
     margin-bottom: 40px;
-    overflow: hidden;
+}
+
+.portfolioCard img {
+    width: 300px;
+    height: 300px;
 }
 
 .portfolioCard:hover img {
@@ -439,6 +446,11 @@ hr.purpleLine {
     margin: 0px;
 }
 
+.portfolioHeader img {
+    height: 500px;
+    width: auto;
+}
+
 .previousNext {
     height: 30px;
     margin: 0px;
@@ -510,12 +522,11 @@ ul {
   object-position: 50% 50%;
 }
 
-
 .sectionHeader {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px; 
-    padding: 50px 200px 30px 200px;
+    gap: 5px; 
+    padding: 50px 220px 30px 220px;
     margin: 0px;
 }
 
@@ -564,13 +575,13 @@ ul {
     align-items: flex-start;
 }
 
-.portfolioColumn {
+.container {
     padding: 20px;
     align-items: center;
     justify-content: center;
 }
 
-.portfolioColumn h2 {
+.container h2 {
     font-family: var(--header-text);
     color: #585858;
     font-size: 22pt;
@@ -579,7 +590,7 @@ ul {
     margin-bottom: 0px;
 }
 
-.portfolioColumn h3 {
+.container h3 {
     font-family: var(--secondary-text);
     color: #585858;
     font-size: 14pt;
@@ -591,7 +602,7 @@ ul {
     display: inline;
 }
 
-.portfolioColumn h4 {
+.container h4 {
     font-family: var(--secondary-text);
     color: #585858;
     font-size: 12pt;
@@ -601,41 +612,18 @@ ul {
     text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 
-    .hero {
-        width: auto;
-        margin: 0 auto;
-        padding: 40px 20px 40px 20px;  
-    }
-
-    .hero h1 {
-        font-size: 30pt;
-    }
-
-    .hero h2 {
-        font-size: 15pt;
-    }
-
-    .hero p {
-        font-size: 10.5pt;
-        width: auto;
-        padding: 20px;
-    }
-
-    .portfolio {
-        width: auto;
-        padding: 20px;
-    }
-    
     .portfolioCard {
         grid-template-columns: 1fr;
         padding: 20px;
         width: auto;
+        gap: 0px;
     }
 
     .portfolioColumnRight {
-        margin-top: 0px;
+        padding: 0px 8px 10px 8px;
+        margin-top: 5px;
         justify-content: center;
     }
 
@@ -658,37 +646,191 @@ ul {
 
     .circle-container {
         margin: 0 auto;
+        display: none;
     }
 
     hr.purpleLine {
         margin: 0 auto;
+    } 
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0px;
+        align-items: center;
+        height: auto;
     }
 
+    nav {
+        padding: 0px 20px 0px 0px;
+        margin: 0px;
+    }
+
+    .nav {
+        padding: 0px;
+        font-size: 8pt;
+    }
+
+    .name h2 {
+        display: none;
+    }
+
+    .hero {
+        width: auto;
+        margin: 0 auto;
+        padding: 40px 20px 40px 20px;  
+    }
+
+    .hero h1 {
+        font-size: 30pt;
+    }
+
+    .hero h2 {
+        font-size: 15pt;
+    }
+
+    .hero p {
+        font-size: 10.5pt;
+        width: auto;
+        padding: 20px;
+    }
+
+    .hero img {
+        height: 150px;
+    }
+
+    .portfolio {
+        width: auto;
+        padding: 20px;
+    }
+
+    .portfolio h2 {
+        font-size: 18pt;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
     .portfolioSubSection {
         grid-template-columns: 1fr;
         padding: 20px;
+        gap: 10px;
+        width: auto;
+        height: auto;
     }
 
     .portfolioHeader {
         grid-template-columns: 1fr;
         padding: 20px;
+        gap: 0px;
+        width: auto;
+        height: auto;
+    }
+
+    .portfolioHeader img {
+        width: 100%;
+        height: auto;
+    }
+
+    .iconHeader img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .portfolioHeaderColumn {
+        margin-top: 0px;
+    }
+
+    .portfolioHeaderColumn h1 {
+        font-size: 20pt;
+        line-height: 22pt;
+    }
+
+    .portfolioHeaderColumn p {
+        font-size: 12pt;
+    }
+
+    .next {
+        font-size: 10pt;
+    }
+
+    .previous {
+        font-size: 10pt;
+    }
+
+    .subNavBtn {
+        font-size: 8pt;
     }
 
     .portfolioSection {
         grid-template-columns: 1fr;
         padding: 20px;
+        gap: 0px;
+        width: auto;
+        height: auto;
     }
 
     .sectionHeader {
         grid-template-columns: 1fr;
-        padding: 20px;
+        padding: 40px 20px 20px 40px;
+        gap: 0px;
+        width: auto;
+        height: auto;
+    }
+
+    .sectionHeader h2 {
+        font-size: 18pt;
+        line-height: 20pt;
+    }
+
+    .sectionHeader h3 {
+        font-size: 12pt;
+    }
+
+    .container {
+        width: auto;
+        height: auto;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .container h2 {
+        font-size: 18pt;
+        line-height: 20pt;
+    }
+
+    .container h3 {
+        font-size: 12pt;
+    }
+
+    .container h4 {
+        font-size: 10pt;
     }
 
     .portfolioSubSectionFull {
         grid-template-columns: 1fr;
         padding: 20px;
+        gap: 0px;
+        width: auto;
+        height: auto;
+    }
+
+    p {
+        font-size: 10pt;
+    }
+
+    ul {
+        font-size: 10pt;
+    }
+
+    .cropped-image {
+        width: 100%;
+        height: auto;
     }
 }
+
 
 
 
