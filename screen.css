@@ -670,7 +670,7 @@ ul {
 
     .nav {
         padding: 0px;
-        font-size: 12pt;
+        font-size: 10pt;
     }
 
     .name h2 {
@@ -692,7 +692,7 @@ ul {
     }
 
     .hero p {
-        font-size: 12pt;
+        font-size: 11pt;
         width: auto;
         padding: 20px;
     }
@@ -764,7 +764,7 @@ ul {
     }
 
     .subNavBtn {
-        font-size: 12pt;
+        font-size: 10pt;
     }
 
     .portfolioSection {
@@ -795,7 +795,6 @@ ul {
     .container {
         width: auto;
         height: auto;
-        padding: 10px 20px 10px 20px;
     }
 
     .container h2 {
@@ -820,11 +819,11 @@ ul {
     }
 
     p {
-        font-size: 12pt;
+        font-size: 11pt;
     }
 
     ul {
-        font-size: 12pt;
+        font-size: 11pt;
     }
 
     .cropped-image {
