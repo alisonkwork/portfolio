@@ -601,10 +601,37 @@ ul {
     text-transform: uppercase;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
+
+    .hero {
+        width: auto;
+        margin: 0 auto;
+        padding: 40px 20px 40px 20px;  
+    }
+
+    .hero h1 {
+        font-size: 30pt;
+    }
+
+    .hero h2 {
+        font-size: 15pt;
+    }
+
+    .hero p {
+        font-size: 10.5pt;
+        width: auto;
+        padding: 20px;
+    }
+
+    .portfolio {
+        width: auto;
+        padding: 20px;
+    }
+    
     .portfolioCard {
         grid-template-columns: 1fr;
         padding: 20px;
+        width: auto;
     }
 
     .portfolioColumnRight {
