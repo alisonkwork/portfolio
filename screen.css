@@ -730,7 +730,7 @@ ul {
 
     .portfolioHeader {
         grid-template-columns: 1fr;
-        padding: 30px 20px 30px 20px;
+        padding: 30px 40px 30px 40px;
         gap: 0px;
         width: auto;
         height: auto;
@@ -839,7 +839,15 @@ ul {
     }
 
     .previousNext {
-        padding: 30px 10px 0px 10px;
+        padding: 30px 20px 0px 20px;
+    }
+
+    .previous {
+        margin-left: 0px;
+    }
+
+    .next {
+        margin-right: 0px;
     }
 }
 
