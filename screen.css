@@ -883,6 +883,10 @@ ul {
     .next {
         margin-right: 0px;
     }
+
+    #topBtn {
+        opacity: 0;
+    }
 }
 
 
