@@ -11,6 +11,10 @@
     --accent-gray: #FAF9F7;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,15 +25,12 @@ header {
     margin: 0px;
     padding: 15px;
     background: #FFF;
-    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.05);
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    overflow: hidden;
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.05);
+    
 }
 
 footer {
@@ -45,13 +46,6 @@ footer {
     align-items: center;
     display: flex;
     justify-content: center;
-}
-
-.footer img {
-    width: auto;
-    height: 30px;
-    margin-right: 0px;
-    display: inline-block;
 }
 
 a {
@@ -312,8 +306,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #FFD75D;
   margin-bottom: 0px;
@@ -321,7 +315,7 @@ nav {
 
 .circle-container .material-icons {
   color: #585858;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 hr.purpleLine {
@@ -335,7 +329,7 @@ hr.purpleLine {
     border-radius: 14px;
     width: auto;
     height: auto;
-    padding: 20px 20px 20px 60px;
+    padding: 20px 20px 20px 40px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px; 
@@ -371,6 +365,9 @@ hr.purpleLine {
     justify-content: center;
     border-top: 1px solid #d8d7d7;
     border-bottom: 1px solid #d8d7d7;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .subNavBtn {
@@ -387,7 +384,12 @@ hr.purpleLine {
 }
 
 .subNavBtn:hover {
-    color: #C24100;
+    color: var(--accent-purple);
+}
+
+.subNavBtn:focus {
+    color: var(--accent-purple);
+    font-weight: 500;
 }
 
 .subNav .material-icons {
@@ -522,11 +524,27 @@ ul {
   object-position: 50% 50%;
 }
 
+.cropped-image-long {
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+  object-fit: cover; 
+  object-position: 50% 50%;
+}
+
+.cropped-image-large {
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  object-fit: cover; 
+  object-position: 50% 50%;
+}
+
 .sectionHeader {
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px; 
-    padding: 50px 220px 30px 220px;
+    padding: 50px 220px 20px 220px;
     margin: 0px;
 }
 
@@ -560,7 +578,7 @@ ul {
 }
 
 .portfolioSubSection {
-    padding: 20px 200px 20px 200px;
+    padding: 0px 200px 80px 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px; 
@@ -568,7 +586,7 @@ ul {
 }
 
 .portfolioSubSectionFull {
-    padding: 20px 200px 20px 200px;
+    padding: 0px 200px 80px 200px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px; 
@@ -576,7 +594,7 @@ ul {
 }
 
 .container {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     align-items: center;
     justify-content: center;
 }
@@ -668,10 +686,6 @@ ul {
         font-size: 10pt;
     }
 
-    .footer img {
-        display: none;
-    }
-
     nav {
         padding: 0px 20px 0px 0px;
         margin: 0px;
@@ -731,7 +745,7 @@ ul {
 
     .portfolioSubSection {
         grid-template-columns: 1fr;
-        padding: 20px;
+        padding: 10px 20px 40px 20px;
         gap: 10px;
         width: auto;
         height: auto;
@@ -794,7 +808,7 @@ ul {
 
     .sectionHeader {
         grid-template-columns: 1fr;
-        padding: 40px 20px 20px 40px;
+        padding: 40px 20px 10px 40px;
         gap: 0px;
         width: auto;
         height: auto;
@@ -829,7 +843,7 @@ ul {
 
     .portfolioSubSectionFull {
         grid-template-columns: 1fr;
-        padding: 20px;
+        padding: 10px 20px 40px 20px;
         gap: 0px;
         width: auto;
         height: auto;
@@ -848,6 +862,16 @@ ul {
         height: auto;
     }
 
+    .cropped-image-long {
+        width: 100%;
+        height: auto;
+    }
+
+    .cropped-image-large {
+        width: 100%;
+        height: auto;
+    }
+
     .previousNext {
         padding: 30px 20px 0px 20px;
     }
@@ -861,6 +885,30 @@ ul {
     }
 }
 
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border: 0px;
+  background: #454545;
+  font-family: var(--secondary-text);
+  color: white;
+  text-align: center;
+  font-size: 10pt;
+  font-weight: 500;
+  transition: all 300ms;
+}
+
+#topBtn:hover {
+  background-color: var(--accent-purple);
+}
 
 
 
