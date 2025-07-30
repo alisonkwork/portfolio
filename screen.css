@@ -692,7 +692,7 @@ ul {
     }
 
     .hero p {
-        font-size: 10.5pt;
+        font-size: 12pt;
         width: auto;
         padding: 20px;
     }
@@ -728,6 +728,7 @@ ul {
         gap: 0px;
         width: auto;
         height: auto;
+        margin-right: 0px;
     }
 
     .portfolioHeader img {
@@ -751,18 +752,19 @@ ul {
 
     .portfolioHeaderColumn p {
         font-size: 12pt;
+        margin-right: 0px;
     }
 
     .next {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     .previous {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     .subNavBtn {
-        font-size: 8pt;
+        font-size: 12pt;
     }
 
     .portfolioSection {
@@ -787,7 +789,7 @@ ul {
     }
 
     .sectionHeader h3 {
-        font-size: 12pt;
+        font-size: 14pt;
     }
 
     .container {
@@ -802,11 +804,11 @@ ul {
     }
 
     .container h3 {
-        font-size: 12pt;
+        font-size: 14pt;
     }
 
     .container h4 {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     .portfolioSubSectionFull {
@@ -818,11 +820,11 @@ ul {
     }
 
     p {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     ul {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     .cropped-image {
