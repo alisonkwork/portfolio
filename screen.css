@@ -797,8 +797,20 @@ ul {
         font-size: 12pt;
     }
 
+    .subNav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+
     .subNavBtn {
         font-size: 10pt;
+        margin-left: 5px;
+    }
+
+    .subNav .material-icons {
+        display: none;
     }
 
     .portfolioSection {
@@ -901,7 +913,7 @@ ul {
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  padding: 20px;
+  padding: 10px 10px 6px 10px;
   justify-content: center;
   align-items: center;
   width: auto;
