@@ -361,7 +361,7 @@ hr.purpleLine {
     display: flex;
     margin: 0px;
     padding: 15px;
-    background-color: var(--accent-gray);
+    background-color: #FEFDFD;
     justify-content: center;
     border-top: 1px solid #d8d7d7;
     border-bottom: 1px solid #d8d7d7;
@@ -540,6 +540,11 @@ ul {
   object-position: 50% 50%;
 }
 
+.cropped-image-full {
+        width: 100%;
+        height: auto;
+    }
+
 .sectionHeader {
     display: grid;
     grid-template-columns: 1fr;
@@ -697,7 +702,7 @@ ul {
     }
 
     .name h2 {
-        display: none;
+        font-size: 10pt;
     }
 
     .hero {
@@ -738,15 +743,7 @@ ul {
 
 @media (max-width: 768px) {
 
-    header {
-        position: sticky; 
-        top: 0; 
-        z-index: 999;
-    }
-
-    .subNav {
-        display: none;
-    }
+    
 
 
     .portfolioSubSection {

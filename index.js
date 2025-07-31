@@ -4,9 +4,10 @@ ScrollReveal().reveal('.previousNext', {delay: 100, duration: 2000});
 ScrollReveal().reveal('.portfolioHeader', {delay: 100, duration: 2000});
 ScrollReveal().reveal('.subNav', {delay: 0, duration: 2000});
 ScrollReveal().reveal('.portfolioSection', {delay: 100, duration: 2000});
-ScrollReveal().reveal('.cropped-image', {delay: 200, origin: 'bottom', distance:'50px', duration: 1500});
-ScrollReveal().reveal('.cropped-image-long', {delay: 200, origin: 'bottom', distance:'50px', duration: 1500});
-ScrollReveal().reveal('.cropped-image-large', {delay: 200, origin: 'bottom', distance:'50px', duration: 1500});
+ScrollReveal().reveal('.cropped-image', {delay: 200, origin: 'bottom', distance:'20px', duration: 1500});
+ScrollReveal().reveal('.cropped-image-long', {delay: 200, origin: 'bottom', distance:'20px', duration: 1500});
+ScrollReveal().reveal('.cropped-image-large', {delay: 200, origin: 'bottom', distance:'20px', duration: 1500});
+ScrollReveal().reveal('.cropped-image-full', {delay: 200, origin: 'bottom', distance:'20px', duration: 1500});
 
 
 let mybutton = document.getElementById("topBtn");
