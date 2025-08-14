@@ -635,9 +635,34 @@ ul {
     text-transform: uppercase;
 }
 
+.about {
+    border-radius: 14px;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px; 
+    justify-content: left;
+    margin-bottom: 40px;
+}
+
+.about img {
+    width: 300px;
+    height: auto;
+    border-radius: 0px 50px 0px 50px;
+}
+
 @media (max-width: 1200px) {
 
     .portfolioCard {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        width: auto;
+        gap: 0px;
+    }
+
+    .about {
         grid-template-columns: 1fr;
         padding: 20px;
         width: auto;
