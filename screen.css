@@ -757,7 +757,7 @@ ul {
     }
 
     .aboutCard2 img {
-        width: 200px
+        width: auto;
     }
 
     .aboutCardFull {
