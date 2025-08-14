@@ -711,7 +711,7 @@ ul {
     height: auto;
     padding: 20px 20px 0px 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 20px; 
     justify-content: left;
     margin-bottom: 0px;
@@ -756,6 +756,10 @@ ul {
         gap: 0px;
     }
 
+    .aboutCard2 img {
+        width: 200px
+    }
+
     .aboutCardFull {
         grid-template-columns: 1fr;
         padding: 0px 28px 0px 28px;
@@ -785,12 +789,6 @@ ul {
         margin-bottom: 10px;
         padding: 0px 8px 10px 8px;
     }
-
-    .aboutColumnRight img {
-        width: auto;
-    }
-
-  
 
     .portfolioCard h3 {
         text-align: center;
